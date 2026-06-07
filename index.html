@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dubrovnik Greens | Premium Microgreens</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -17,65 +17,68 @@
 }
 
 body{
-    background:#0f1f14;
-    color:#fff;
+    background:#f6f8f5;
+    color:#1f2a1f;
 }
 
 /* HERO */
 .hero{
-    height:100vh;
+    height:90vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
     padding:20px;
-    background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-url('https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=1600&q=80');
+
+    background:
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+    url('https://images.unsplash.com/photo-1615485290382-441e4d885a0a?auto=format&fit=crop&w=1600&q=80');
+
     background-size:cover;
     background-position:center;
 }
 
 .hero h1{
     font-size:3rem;
-    letter-spacing:2px;
+    letter-spacing:1px;
+    color:#234B2A;
 }
 
 .hero p{
-    margin-top:15px;
+    margin-top:10px;
     font-size:1.2rem;
-    opacity:0.9;
+    color:#3b4b3b;
 }
 
 .btn{
-    margin-top:25px;
-    padding:12px 24px;
-    background:#C8A35D;
-    color:#000;
+    margin-top:20px;
+    padding:12px 26px;
+    background:#234B2A;
+    color:white;
     text-decoration:none;
-    font-weight:600;
     border-radius:30px;
-    transition:0.3s;
+    font-weight:600;
 }
 
 .btn:hover{
-    transform:scale(1.05);
+    opacity:0.9;
 }
 
 /* SECTIONS */
 section{
-    padding:80px 20px;
     max-width:1100px;
     margin:auto;
+    padding:70px 20px;
 }
 
 h2{
-    color:#C8A35D;
+    color:#234B2A;
     margin-bottom:20px;
-    font-size:2rem;
+    font-size:1.8rem;
 }
 
-/* GRID */
+/* PRODUCTS */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -83,44 +86,39 @@ h2{
 }
 
 .card{
-    background:#16281d;
+    background:white;
     padding:20px;
-    border-radius:12px;
-    border:1px solid rgba(200,163,93,0.2);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#C8A35D;
+    border-radius:14px;
+    border:1px solid #e6eae6;
+    box-shadow:0 4px 20px rgba(0,0,0,0.04);
 }
 
 .card h3{
-    margin-bottom:10px;
-    color:#fff;
+    margin-bottom:8px;
+    color:#234B2A;
 }
 
 /* WHY */
 .why p{
-    margin:10px 0;
-    opacity:0.9;
+    margin:8px 0;
+    font-size:1.05rem;
 }
 
 /* CONTACT */
 .contact{
-    background:#0c1710;
+    background:#ffffff;
+    border-top:1px solid #e6eae6;
     text-align:center;
-    border-top:1px solid rgba(200,163,93,0.2);
 }
 
 .whatsapp{
     display:inline-block;
     margin-top:20px;
-    padding:12px 25px;
+    padding:12px 24px;
     background:#25D366;
-    color:#fff;
-    border-radius:30px;
+    color:white;
     text-decoration:none;
+    border-radius:30px;
     font-weight:600;
 }
 
@@ -129,7 +127,7 @@ footer{
     text-align:center;
     padding:20px;
     font-size:0.9rem;
-    opacity:0.6;
+    color:#777;
 }
 
 </style>
@@ -148,9 +146,9 @@ footer{
 <section>
     <h2>O nama</h2>
     <p>
-        Dubrovnik Greens uzgaja premium microgreense u srcu Konavala,
-        koristeći kontrolirane hidroponske uvjete kako bi osigurali
-        konstantnu svježinu, okus i nutritivnu vrijednost.
+        Dubrovnik Greens uzgaja svježe i nutritivno bogate microgreense u Konavlima.
+        Koristimo kontrolirani hidroponski uzgoj kako bismo osigurali kvalitetu
+        koja je idealna za restorane i hotele.
     </p>
 </section>
 
@@ -162,29 +160,23 @@ footer{
 
         <div class="card">
             <h3>Grašak</h3>
-            <div class="card">
-    <img src="https://images.unsplash.com/photo-1615486364462-ef6363c8f2f7?auto=format&fit=crop&w=800&q=80" style="width:100%;border-radius:10px;margin-bottom:10px;">
-    <h3>Grašak</h3>
-    <p>Sladak, hrskav i svjež okus.</p>
-</div>
-
-       <div class="card">
-    <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=800&q=80" style="width:100%;border-radius:10px;margin-bottom:10px;">
-    <h3>Suncokret</h3>
-    <p>Orašasta aroma i bogata tekstura.</p>
-</div>
-
-       <div class="card">
-    <img src="https://images.unsplash.com/photo-1615485290382-441e4d885a0a?auto=format&fit=crop&w=800&q=80" style="width:100%;border-radius:10px;margin-bottom:10px;">
-    <h3>Rotkvica</h3>
-    <p>Pikantan i intenzivan okus.</p>
-</div>
+            <p>Sladak, svjež i hrskav.</p>
+        </div>
 
         <div class="card">
-    <img src="https://images.unsplash.com/photo-1584270354949-1f7c2c3d1b6b?auto=format&fit=crop&w=800&q=80" style="width:100%;border-radius:10px;margin-bottom:10px;">
-    <h3>Brokula</h3>
-    <p>Blaga aroma i visoka nutritivna vrijednost.</p>
-</div>
+            <h3>Suncokret</h3>
+            <p>Orašast i bogat okus.</p>
+        </div>
+
+        <div class="card">
+            <h3>Rotkvica</h3>
+            <p>Pikantan i intenzivan.</p>
+        </div>
+
+        <div class="card">
+            <h3>Brokula</h3>
+            <p>Blag i nutritivno bogat.</p>
+        </div>
 
     </div>
 </section>
@@ -194,19 +186,23 @@ footer{
     <h2>Zašto Dubrovnik Greens?</h2>
     <p>✔ Lokalno uzgojeno u Konavlima</p>
     <p>✔ Svježe ubrano na dan isporuke</p>
-    <p>✔ Bez pesticida i kemikalija</p>
-    <p>✔ Premium kvaliteta za restorane i hotele</p>
+    <p>✔ Bez pesticida</p>
+    <p>✔ Premium kvaliteta za restorane</p>
 </section>
 
-<p>Email: dubrovnikgreens@gmail.com</p>
-<p>WhatsApp / Mob: +385 91 550 8564</p>
-<p>Instagram: @dubrovnikgreens</p>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Kontakt</h2>
 
-<a class="whatsapp"
-   href="https://wa.me/385915508564"
-   target="_blank">
-   WhatsApp narudžba
-</a>
+    <p>Email: dubrovnikgreens@gmail.com</p>
+    <p>WhatsApp: +385 91 550 8564</p>
+    <p>Instagram: @dubrovnikgreens</p>
+
+    <a class="whatsapp"
+       href="https://wa.me/385915508564"
+       target="_blank">
+       WhatsApp narudžba
+    </a>
 </section>
 
 <footer>
