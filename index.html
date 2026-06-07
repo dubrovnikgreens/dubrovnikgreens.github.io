@@ -3,129 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dubrovnik Greens</title>
+<title>Dubrovnik Greens | Premium Microgreens</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
     margin:0;
-    font-family:Inter;
-    background:#fbfcfb;
+    font-family:'Inter', sans-serif;
+    background:#f7f9f7;
     color:#1f2a1f;
+    line-height:1.6;
 }
 
-/* HERO FULL STORY */
+/* HERO */
 .hero{
     height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    padding:60px;
+    padding:80px;
     background:
-    linear-gradient(to right, rgba(255,255,255,0.92), rgba(255,255,255,0.2)),
-    url('https://images.unsplash.com/photo-1524593119773-4841c1b0a3c5?auto=format&fit=crop&w=1600&q=80');
+    linear-gradient(to right, rgba(255,255,255,0.92), rgba(255,255,255,0.55)),
+    url('https://images.unsplash.com/photo-1615485290382-441e4d885a0a?auto=format&fit=crop&w=1600&q=80');
     background-size:cover;
     background-position:center;
 }
 
 .hero h1{
-    font-size:3.5rem;
-    color:#234B2A;
+    font-size:4rem;
     margin:0;
+    color:#234B2A;
+    letter-spacing:1px;
 }
 
 .hero p{
-    font-size:1.2rem;
-    max-width:500px;
+    font-size:1.25rem;
+    max-width:520px;
     margin-top:15px;
     color:#3a4a3a;
 }
 
-.cta{
+.btn{
     margin-top:25px;
-}
-
-button, .btn{
+    display:inline-block;
     background:#234B2A;
     color:white;
-    padding:12px 22px;
+    padding:14px 26px;
     border-radius:30px;
     text-decoration:none;
-    display:inline-block;
+    font-weight:600;
+    width:fit-content;
+    transition:0.2s;
 }
 
-/* SECTION LAYOUT */
+.btn:hover{
+    opacity:0.9;
+    transform:translateY(-2px);
+}
+
+/* SECTIONS */
 section{
-    max-width:1000px;
+    max-width:1050px;
     margin:auto;
-    padding:80px 20px;
+    padding:90px 20px;
 }
 
 h2{
+    font-size:2rem;
     color:#234B2A;
-    font-size:1.8rem;
+    margin-bottom:25px;
 }
 
-/* STORY BLOCK */
+/* STORY */
 .story{
-    font-size:1.1rem;
-    line-height:1.7;
+    font-size:1.15rem;
     color:#3a4a3a;
+    max-width:800px;
 }
 
-/* MENU STYLE */
+/* MENU */
 .menu{
     display:flex;
     flex-direction:column;
-    gap:15px;
-    margin-top:20px;
+    gap:14px;
 }
 
 .item{
     display:flex;
     justify-content:space-between;
-    padding:15px;
+    padding:18px 20px;
     background:white;
+    border-radius:14px;
     border:1px solid #e6eae6;
-    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.04);
+    font-size:1.05rem;
 }
 
-/* WHY BLOCK */
-.why{
+/* FEATURES */
+.features{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
 }
 
 .box{
     background:white;
-    padding:20px;
-    border-radius:12px;
+    padding:22px;
+    border-radius:14px;
     border:1px solid #e6eae6;
+    box-shadow:0 3px 12px rgba(0,0,0,0.04);
+    font-weight:500;
 }
 
 /* CONTACT */
 .contact{
     text-align:center;
+    background:#ffffff;
+    border-top:1px solid #e6eae6;
+}
+
+.contact p{
+    font-size:1.05rem;
 }
 
 .whatsapp{
     margin-top:20px;
-    background:#25D366;
-    padding:14px 24px;
-    border-radius:30px;
     display:inline-block;
+    background:#25D366;
     color:white;
+    padding:15px 28px;
+    border-radius:30px;
     text-decoration:none;
+    font-weight:600;
+    transition:0.2s;
+}
+
+.whatsapp:hover{
+    transform:translateY(-2px);
 }
 
 /* FOOTER */
 footer{
     text-align:center;
-    padding:20px;
+    padding:25px;
     color:#888;
+    font-size:0.9rem;
 }
 
 </style>
@@ -136,18 +160,16 @@ footer{
 <!-- HERO -->
 <div class="hero">
     <h1>Dubrovnik Greens</h1>
-    <p>Premium microgreens grown in Konavle for chefs, restaurants and modern kitchens.</p>
+    <p>Premium microgreens grown in Konavle — fresh, local and delivered to restaurants in Dubrovnik.</p>
 
-    <div class="cta">
-        <a class="btn" href="#contact">Naruči sada</a>
-    </div>
+    <a class="btn" href="#contact">Naruči sada</a>
 </div>
 
 <!-- STORY -->
 <section>
     <h2>Naša priča</h2>
     <p class="story">
-        U Konavlima uzgajamo svježe microgreense s fokusom na kvalitetu, čistoću i okus.
+        U Konavlima uzgajamo svježe microgreense s fokusom na kvalitetu, okus i dosljednost.
         Naš cilj je isporučiti maksimalnu svježinu restoranima u Dubrovniku — ubrano isti dan,
         bez kompromisa.
     </p>
@@ -176,21 +198,21 @@ footer{
 
         <div class="item">
             <span>Brokula</span>
-            <span>blago & zdravo</span>
+            <span>blago & nutritivno</span>
         </div>
 
     </div>
 </section>
 
-<!-- WHY -->
+<!-- FEATURES -->
 <section>
-    <h2>Zašto mi</h2>
+    <h2>Zašto Dubrovnik Greens</h2>
 
-    <div class="why">
-        <div class="box">✔ Lokalno Konavle</div>
-        <div class="box">✔ Berba isti dan</div>
+    <div class="features">
+        <div class="box">✔ Lokalno uzgojeno u Konavlima</div>
+        <div class="box">✔ Svježa isporuka isti dan</div>
         <div class="box">✔ Bez pesticida</div>
-        <div class="box">✔ Premium za restorane</div>
+        <div class="box">✔ Premium kvaliteta za restorane</div>
     </div>
 </section>
 
@@ -201,7 +223,7 @@ footer{
     <p>dubrovnikgreens@gmail.com</p>
     <p>+385 91 550 8564</p>
 
-    <a class="whatsapp" href="https://wa.me/385915508564">
+    <a class="whatsapp" href="https://wa.me/385915508564" target="_blank">
         WhatsApp narudžba
     </a>
 </section>
