@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dubrovnik Greens</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -10,241 +11,260 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#f7f9f7;
-    color:#1f2a1f;
-    line-height:1.6;
+font-family:'Inter',sans-serif;
+background:#fafcf9;
+color:#1f2a1f;
+line-height:1.6;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(to bottom,#ffffff,#f3f8f3);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+background:linear-gradient(180deg,#ffffff,#f3f8f3);
 }
 
 .logo{
-    max-width:650px;
-    width:90%;
-    height:auto;
-    margin-bottom:20px;
+max-width:650px;
+width:90%;
+height:auto;
+margin-bottom:25px;
 }
 
 .hero p{
-    font-size:1.2rem;
-    color:#355235;
-    max-width:700px;
+font-size:1.2rem;
+max-width:700px;
+color:#345234;
 }
 
 .btn{
-    margin-top:30px;
-    display:inline-block;
-    background:#1f5a31;
-    color:white;
-    text-decoration:none;
-    padding:14px 30px;
-    border-radius:40px;
-    font-weight:600;
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:#1f5a31;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
 }
 
 section{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 20px;
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
 }
 
 h2{
-    text-align:center;
-    color:#1f5a31;
-    margin-bottom:40px;
-    font-size:2.2rem;
+text-align:center;
+font-size:2.2rem;
+margin-bottom:40px;
+color:#1f5a31;
 }
 
 .story{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
-    font-size:1.1rem;
+max-width:850px;
+margin:auto;
+text-align:center;
+font-size:1.1rem;
 }
 
 .products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .product{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
 .product img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
+width:100%;
+height:260px;
+object-fit:cover;
 }
 
 .product h3{
-    padding:20px 20px 10px;
-    color:#1f5a31;
+padding:18px 20px 10px;
+color:#1f5a31;
 }
 
 .product p{
-    padding:0 20px 20px;
+padding:0 20px 20px;
 }
 
 .features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .feature{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
 }
 
 .contact{
-    text-align:center;
+text-align:center;
+background:#ffffff;
 }
 
 .contact p{
-    margin:10px 0;
-    font-size:1.1rem;
+margin:10px 0;
+font-size:1.1rem;
 }
 
 .whatsapp{
-    display:inline-block;
-    margin-top:20px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:15px 30px;
-    border-radius:40px;
-    font-weight:600;
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
 }
 
 footer{
-    text-align:center;
-    padding:30px;
-    color:#666;
+padding:30px;
+text-align:center;
+color:#777;
 }
 
 </style>
 </head>
+
 <body>
 
 <section class="hero">
 
-    <img src="logo.png.png" alt="Dubrovnik Greens" class="logo">
+<img src="logo.png.png" alt="Dubrovnik Greens" class="logo">
 
-    <p>
-        Svježi microgreens iz Konavala za restorane, hotele i ljubitelje kvalitetne hrane.
-    </p>
+<p>
+Svježi microgreens iz Konavala za restorane, hotele i ljubitelje vrhunske hrane.
+</p>
 
-    <a href="#kontakt" class="btn">
-        Kontaktirajte nas
-    </a>
-
-</section>
-
-<section>
-
-    <h2>Naša priča</h2>
-
-    <p class="story">
-        Dubrovnik Greens proizvodi premium microgreense u Konavlima s naglaskom na svježinu,
-        kvalitetu i vrhunski okus. Naši microgreens uzgajaju se za restorane,
-        hotele i sve koji žele najbolje sastojke za svoja jela.
-    </p>
+<a href="#kontakt" class="btn">
+Kontaktirajte nas
+</a>
 
 </section>
 
 <section>
 
-    <h2>Naši microgreens</h2>
+<h2>Naša priča</h2>
 
-    <div class="products">
-
-        <div class="product">
-            <img src="images/amaranth.jpg.JPEG" alt="Amarant">
-            <h3>Amarant</h3>
-            <p>Intenzivna crvena boja i elegantan izgled za vrhunsko serviranje.</p>
-        </div>
-
-        <div class="product">
-            <img src="images/red-rambo.jpg.jpg" alt="Red Rambo">
-            <h3>Red Rambo Radish</h3>
-            <p>Prepoznatljiva boja i izražen okus rotkvice.</p>
-        </div>
-
-        <div class="product">
-            <img src="images/radish-rose.jpg.jpg" alt="Radish Rose">
-            <h3>Radish Rose</h3>
-            <p>Svjež, pikantan okus i atraktivan izgled.</p>
-        </div>
-
-    </div>
+<p class="story">
+Dubrovnik Greens proizvodi premium microgreense u Konavlima s naglaskom na svježinu, kvalitetu i okus.
+Naši proizvodi namijenjeni su restoranima, hotelima i svima koji žele vrhunske lokalne sastojke.
+</p>
 
 </section>
 
 <section>
 
-    <h2>Zašto odabrati nas</h2>
+<h2>Naši microgreens</h2>
 
-    <div class="features">
+<div class="products">
 
-        <div class="feature">
-            🌱 Lokalna proizvodnja u Konavlima
-        </div>
+<div class="product">
+<img src="images/foxy-pea.jpg.jpg" alt="Foxy Pea">
+<h3>Foxy Pea</h3>
+<p>Sladak okus, hrskava tekstura i karakteristične vitice.</p>
+</div>
 
-        <div class="feature">
-            🚚 Svježa dostava
-        </div>
+<div class="product">
+<img src="images/amaranth.jpg.JPEG" alt="Amarant">
+<h3>Amarant</h3>
+<p>Intenzivna crvena boja idealna za dekoraciju i plating.</p>
+</div>
 
-        <div class="feature">
-            ⭐ Premium kvaliteta
-        </div>
+<div class="product">
+<img src="images/red-rambo.jpg.jpg" alt="Red Rambo">
+<h3>Red Rambo Radish</h3>
+<p>Tamni listovi i izražen pikantan okus rotkvice.</p>
+</div>
 
-        <div class="feature">
-            🍽️ Idealno za restorane i hotele
-        </div>
+<div class="product">
+<img src="images/radish-rose.jpg.jpg" alt="Radish Rose">
+<h3>Radish Rose</h3>
+<p>Svjež i blago pikantan okus uz atraktivan izgled.</p>
+</div>
 
-    </div>
+<div class="product">
+<img src="images/cabbage.jpg.JPEG" alt="Cabbage">
+<h3>Cabbage</h3>
+<p>Nježan okus i široka primjena u modernoj gastronomiji.</p>
+</div>
+
+<div class="product">
+<img src="images/arugula.jpg.jpg" alt="Rikula">
+<h3>Rikula</h3>
+<p>Papreni okus koji savršeno upotpunjuje brojna jela.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Zašto odabrati Dubrovnik Greens</h2>
+
+<div class="features">
+
+<div class="feature">
+🌱 Lokalna proizvodnja u Konavlima
+</div>
+
+<div class="feature">
+🚚 Svježa dostava
+</div>
+
+<div class="feature">
+⭐ Premium kvaliteta
+</div>
+
+<div class="feature">
+🍽️ Idealno za restorane i hotele
+</div>
+
+</div>
 
 </section>
 
 <section id="kontakt" class="contact">
 
-    <h2>Kontakt</h2>
+<h2>Kontakt</h2>
 
-    <p>📧 dubrovnikgreens@gmail.com</p>
+<p>📧 dubrovnikgreens@gmail.com</p>
 
-    <p>📞 +385 91 550 8564</p>
+<p>📞 +385 91 550 8564</p>
 
-    <a class="whatsapp" href="https://wa.me/385915508564">
-        WhatsApp narudžba
-    </a>
+<a class="whatsapp" href="https://wa.me/385915508564">
+WhatsApp narudžba
+</a>
 
 </section>
 
 <footer>
-    © 2026 Dubrovnik Greens
+© 2026 Dubrovnik Greens
 </footer>
 
 </body>
